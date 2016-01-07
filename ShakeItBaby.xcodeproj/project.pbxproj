@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ACBC2731C3C075900567B03 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 2ACBC2721C3C075900567B03 /* Audio */; };
 		2AEDEEC01C3B54E200E4020A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDEEBF1C3B54E200E4020A /* AppDelegate.swift */; };
 		2AEDEEC21C3B54E200E4020A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDEEC11C3B54E200E4020A /* ViewController.swift */; };
 		2AEDEEC51C3B54E200E4020A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEDEEC31C3B54E200E4020A /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		2AEDEECA1C3B54E200E4020A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEDEEC81C3B54E200E4020A /* LaunchScreen.storyboard */; };
 		2AEDEED51C3B54E200E4020A /* ShakeItBabyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDEED41C3B54E200E4020A /* ShakeItBabyTests.swift */; };
 		2AEDEEE01C3B54E200E4020A /* ShakeItBabyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDEEDF1C3B54E200E4020A /* ShakeItBabyUITests.swift */; };
+		2AEDEEF81C3B577900E4020A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEDEEF71C3B577900E4020A /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ACBC2721C3C075900567B03 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		2AEDEEBC1C3B54E200E4020A /* ShakeItBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeItBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEDEEBF1C3B54E200E4020A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AEDEEC11C3B54E200E4020A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		2AEDEEDB1C3B54E200E4020A /* ShakeItBabyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeItBabyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEDEEDF1C3B54E200E4020A /* ShakeItBabyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeItBabyUITests.swift; sourceTree = "<group>"; };
 		2AEDEEE11C3B54E200E4020A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AEDEEF71C3B577900E4020A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AEDEEF81C3B577900E4020A /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,8 @@
 		2AEDEEB31C3B54E200E4020A = {
 			isa = PBXGroup;
 			children = (
+				2ACBC2721C3C075900567B03 /* Audio */,
+				2AEDEEF71C3B577900E4020A /* AVFoundation.framework */,
 				2AEDEEBE1C3B54E200E4020A /* ShakeItBaby */,
 				2AEDEED31C3B54E200E4020A /* ShakeItBabyTests */,
 				2AEDEEDE1C3B54E200E4020A /* ShakeItBabyUITests */,
@@ -229,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACBC2731C3C075900567B03 /* Audio in Resources */,
 				2AEDEECA1C3B54E200E4020A /* LaunchScreen.storyboard in Resources */,
 				2AEDEEC71C3B54E200E4020A /* Assets.xcassets in Resources */,
 				2AEDEEC51C3B54E200E4020A /* Main.storyboard in Resources */,
@@ -482,6 +490,7 @@
 				2AEDEEE61C3B54E200E4020A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AEDEEE71C3B54E200E4020A /* Build configuration list for PBXNativeTarget "ShakeItBabyTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				2AEDEEE91C3B54E200E4020A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AEDEEEA1C3B54E200E4020A /* Build configuration list for PBXNativeTarget "ShakeItBabyUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				2AEDEEEC1C3B54E200E4020A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
