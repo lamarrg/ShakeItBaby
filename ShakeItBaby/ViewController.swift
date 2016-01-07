@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        audioFile = NSBundle.mainBundle().pathsForResourcesOfType(<#T##ext: String?##String?#>, inDirectory: <#T##String?#>) // NSBundle.mainBundle().pathsForResourcesOfType("mp3", inDirectory: "Audio")
+        audioFile = NSBundle.mainBundle().pathsForResourcesOfType("mp3", inDirectory: "Audio")
 
     }
     
