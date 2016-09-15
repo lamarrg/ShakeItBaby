@@ -17,13 +17,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        audioFile = NSBundle.mainBundle().pathsForResourcesOfType("mp3", inDirectory: "Audio")
+        audioFile = Bundle.main.paths(forResourcesOfType: "mp3", inDirectory: "Audio")
 
     }
     
     
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
-        if event?.subtype == UIEventSubtype.MotionShake {
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if event?.subtype == UIEventSubtype.motionShake {
         
             
         let audioFileRandom = Int(arc4random_uniform(UInt32(audioFile.count)))
@@ -31,12 +31,13 @@ class ViewController: UIViewController {
             do
             {
 
-                try player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: audioFile[audioFileRandom]))
+                try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioFile[audioFileRandom]))
                 
             
             } catch {
              
                 // error stuff here
+                print("an error occurred")
                 
             }
             
