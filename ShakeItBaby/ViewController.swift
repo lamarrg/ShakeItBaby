@@ -25,14 +25,13 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if event?.subtype == UIEventSubtype.motionShake {
         
-            
         let audioFileRandom = Int(arc4random_uniform(UInt32(audioFile.count)))
             
             do
-            {
-
-                try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioFile[audioFileRandom]))
                 
+            {
+                
+                try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioFile[audioFileRandom]))
             
             } catch {
              
@@ -45,7 +44,5 @@ class ViewController: UIViewController {
         
         }
     }
-
-
 }
 
