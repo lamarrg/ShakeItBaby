@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             
             } catch {
              
-                // error stuff here
+                // error stuff here, needs to be completed
                 print("an error occurred")
                 
             }
